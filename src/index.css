@@ -1,0 +1,248 @@
+ *,
+ *::before,
+ *::after {
+   box-sizing: border-box;
+ }
+ 
+::-webkit-scrollbar{
+  width: 0.5em;
+  height: 1em;
+}
+::-webkit-scrollbar-track{
+  background-color: white;
+}
+::-webkit-scrollbar-thumb{
+  background: black;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: black;
+}
+
+ * {
+   margin: 0;
+   padding: 0;
+ }
+
+ body {
+   line-height: 1.5;
+   -webkit-font-smoothing: antialiased;
+   background-image: repeating-linear-gradient(45deg, rgba(97, 97, 97, 0.1) 0px, rgba(97, 97, 97, 0.1) 2px, transparent 2px, transparent 4px), linear-gradient(90deg, rgb(239, 239, 239), rgb(239, 239, 239));
+ }
+
+ img,
+ picture,
+ video,
+ canvas,
+ svg {
+   display: block;
+ }
+
+ input,
+ button,
+ textarea,
+ select {
+   font: inherit;
+ }
+
+ p,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+   overflow-wrap: break-word;
+ }
+
+ #root,
+ #__next {
+   isolation: isolate;
+ }
+
+ @media (width <=1440px) {
+   .container {
+     width: 1280px;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 0px;
+
+     .navbar {
+       width: 1280px;
+       position: static;
+       top: 190px;
+       left: 100px;
+     }
+   }
+
+   .header {
+    position: static;
+     top: 0;
+     margin: 0;
+
+     a {
+       display: flex;
+       align-items: center;
+     }
+   }
+
+   .Product {
+     width: 1280px;
+     flex-wrap: wrap;
+     justify-content: center;
+     .productList {
+      justify-content: center;
+     }
+   }
+
+   .recipes {
+     width: 1280px;
+     flex-wrap: wrap;
+     justify-content: center;
+     .recipeList {
+      justify-content: center;
+     }
+   }
+
+   .recipes {
+     width: 1280px;
+     flex-wrap: wrap;
+     justify-content: center;
+     .postList {
+      justify-content: center;
+     }
+   }
+
+ }
+
+ @media (width <=1280px) {
+   .container {
+     width: 1024px;
+
+     .navbar {
+       width: 1024px;  
+       flex-wrap: wrap;
+     }
+
+   }
+
+   .Product {
+     width: 1024px;
+   }
+   .recipes {
+     width: 1024px;
+   }
+ }
+
+ @media (width <=1024px) {
+   .container {
+     width: 990px;
+
+     .navbar {
+       width: 990px;
+     }
+   }
+
+   .Product {
+     width: 990px;
+   }
+ }
+
+ @media (width <=990px) {
+   .container {
+     width: 768px;
+
+     .navbar {
+       width: 768px;
+     }
+   }
+
+   .Product {
+     width: 768px;
+   }
+   .recipes {
+     width: 768px;
+   }
+ }
+
+ @media (width <=768px) {
+   .container {
+     width: 540px;
+
+     .navbar {
+       width: 540px;
+     }
+   }
+
+   .header {
+     z-index: 100;
+
+     a {
+       width: 150px;
+     }
+   }
+
+   .Product {
+     width: 540px;
+   }
+   .recipes {
+     width: 540px;
+   }
+ }
+
+ @media (width <=540px) {
+   .container {
+     width: 375px;
+
+     .navbar {
+       width: 375px;
+     }
+   }
+
+   .Product {
+     width: 375px;
+   }
+   .recipes {
+     width: 375px;
+   }
+   .postItem {
+    width: 375px;
+    padding: 20px;
+    .postItem-Text {
+      width: 327px;
+    }
+    .like{
+      width:327px;
+      flex-wrap: wrap;
+    }
+
+    .postTags {
+      flex-wrap: wrap;
+    }
+   }
+ }
+
+ @media (width <=375px) {
+   .container {
+     width: 150px;
+
+     .navbar {
+      width: 150px;
+
+      input {
+        width: 100%;
+      }
+
+      .pageList {
+        display: flex;
+        flex-direction: column;
+      }
+     }
+   }
+
+   .Product {
+    width: 150px;
+   }
+   .recipes {
+     width: 150px;
+   }
+ }
